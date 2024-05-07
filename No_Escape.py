@@ -7,6 +7,17 @@ import socket
 import random
 import sys
 import time
+import signal
+
+def signal_handler(sig, frame):
+    print("")
+    print("")
+    print("Exiting...")
+    time.sleep(3)
+    print("")
+    exit(0)
+
+signal.signal(signal.SIGINT, signal_handler)
 
 # Kırmızı rengi tanımla
 RED = '\033[91m'
@@ -126,5 +137,6 @@ def menu():
 if __name__ == "__main__":
     clear_screen()
     animate_text("This tool is made for security testing and cybersecurity! We are not responsible for malicious use!")
-    time.sleep(5)
+    print("")
+    input("Press Enter to continue...")
     menu()
