@@ -1,7 +1,5 @@
-# Kali Linux tool
+# Kali Linux tool | DoS attack tool
 # This tool is made for security testing and cybersecurity! We are not responsible for malicious use!
-
-DoS attack tool
 
 # Menu
 
